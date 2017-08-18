@@ -1,14 +1,31 @@
+body{
+  background-color: rgba(56, 48, 171, 0.50);
+}
 .hidden {
   display: hidden;
 }
+#ping {
+    position: fixed;
+    top: 30vh;
+    padding-left: 7vw;
+
+}
+
+#pong {
+    position: fixed;
+    top: 16vh;
+    bottom:1vh;
+    left: 53vw;
+    margin: auto;
+}
+
 
 #ping-pong {
     position: fixed;
-    top: 5vh;
+    top: 10vh;
     bottom:1vh;
-    left: 25vw;
+    left: 27vw;
     margin: auto;
-    z-index: -1;
 }
 .form-group{
   text-align: center;
@@ -16,5 +33,31 @@
 
 .button {
   position: fixed;
-   left: 45vw;
+  border: 1px;
+   right: 44vw;
+   width: 12vw;
+}
+#results {
+  position: fixed;
+  right: 45vw;
+  top: 90vh;
+  width: 10vw;
+  font-size: 24pt;
+  font-family: fantasy;
+  color: red;
+}
+
+input:required {
+  box-shadow: 4px 4px 20px rgba(205, 14, 122, 0.84);
+}
+input:required:focus {
+  border: 1px solid red;
+  outline: none;
+}
+input:required:hover {
+  opacity: 1;
+}
+#message {
+ right: 45vw;
+ width: 14vw;
 }
