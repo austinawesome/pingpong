@@ -8,19 +8,19 @@ var pingPonged = function(inputFromUser) {
   } else {
     score = score + input1;
   }
-  (for i=0; i<1; i++) {
-    if (score % 3 === 0 || score % 5 === 0) {
-      if (score % 15 === 0) {
-        feedback = "ping-pong";
-      } else if (score % 3 === 0) {
-        feedback = "ping";
-      } else if (score % 5 === 0) {
-        feedback = "pong";
-      }
-      revealIt = true;
-    } else {
-      feedback = score;
-      revealIt = false;
+    for (i=0; i<1; i++) {
+      if (score % 3 === 0 || score % 5 === 0) {
+        if (score % 15 === 0) {
+          feedback = "ping-pong";
+        } else if (score % 3 === 0) {
+          feedback = "ping";
+        } else if (score % 5 === 0) {
+          feedback = "pong";
+        }
+        revealIt = true;
+      } else {
+        feedback = score;
+        revealIt = false;
     }
   }
   return feedback;
