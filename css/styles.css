@@ -1,9 +1,11 @@
 body{
   background-color: rgba(56, 48, 171, 0.50);
 }
+
 .hidden {
   display: hidden;
 }
+
 #ping {
     position: fixed;
     top: 30vh;
@@ -19,7 +21,6 @@ body{
     margin: auto;
 }
 
-
 #ping-pong {
     position: fixed;
     top: 10vh;
@@ -27,6 +28,7 @@ body{
     left: 27vw;
     margin: auto;
 }
+
 .form-group{
   text-align: center;
 }
@@ -37,6 +39,7 @@ body{
    right: 44vw;
    width: 12vw;
 }
+
 #results {
   position: fixed;
   right: 40vw;
@@ -49,13 +52,16 @@ body{
 input:required {
   box-shadow: 4px 4px 20px rgba(205, 14, 122, 0.84);
 }
+
 input:required:focus {
   border: 1px solid red;
   outline: none;
 }
+
 input:required:hover {
   opacity: 1;
 }
+
 #message {
  right: 45vw;
  width: 14vw;

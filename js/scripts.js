@@ -4,44 +4,38 @@ var pingPonged = function(inputFromUser) {
   if (firstTime) {
     score = input1;
     firstTime = false;
-    feedback=score;
+    feedback = score;
   } else {
-    score = score+input1;
+    score = score + input1;
   }
+  if (score % 3 === 0 || score % 5 === 0) {
+    if (score % 15 === 0) {
+      feedback = "ping-pong";
+    } else if (score % 3 === 0) {
+      feedback = "ping";
+    } else if (score % 5 === 0) {
+      feedback = "pong";
     }
-return feedback;
+    revealIt = true;
+  } else {
+    feedback = score;
+    revealIt = false;
+  }
+  return feedback;
 }
-
-
-
-
-
-
-
-
-// dont cross this line
-// dont cross this line
-// dont cross this line
-// dont cross this line
-// dont cross this line
-
-
-
-
 
 
 $(document).ready(function() {
   $("form#form-whole").submit(function(event) {
     event.preventDefault();
     var inputFromUser = $("#message").val();
-    var output= pingPonged(inputFromUser);
+    var output = pingPonged(inputFromUser);
     $(".pictures img").addClass("hidden");
-    $("#result").prepend("<P>" +output+ "</p>");
+    $("#result").prepend("<P>" + output + "</p>");
     console.log(output);
-    if (output === 'ping' ||output === 'pong'||output === 'ping-pong'){
-    $("#"+output).removeClass("hidden");
-    var pictoshow=$("#"+output).removeClass("hidden");
-    console.log(pictoshow)
-  }
+    if (output === 'ping' || output === 'pong' || output === 'ping-pong') {
+      $("#" + output).removeClass("hidden");
+      var pictoshow = $("#" + output).removeClass("hidden");
+    }
   });
 });
