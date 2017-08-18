@@ -6,13 +6,22 @@ var pingPonged = function(inputFromUser) {
     score = input1;
     firstTime = false;
     alert("first");
-  } else {
-
-
   }
-return score;
+//including both variations!!!
+    if (score % 3 === 0 || score % 5 === 0) {
+        if(score % 15===0) {
+alert("ping-pong!!!");
+        }
 
+    }
+    else {
+      alert("alert no");
+    }
+
+
+    alert(score);
 }
+
 
 
 
