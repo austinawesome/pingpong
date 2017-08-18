@@ -2,26 +2,36 @@ var firstTime = true;
 
 var pingPonged = function(inputFromUser) {
   var input1 = parseInt(inputFromUser);
-  if (firstTime){
+  console.log(input1);
+  if (firstTime) {
     score = input1;
     firstTime = false;
-    alert("first");
+    console.log("first");
+    feedback=score;
+  } else {
+  score = score+input1;
+  console.log(score);
   }
+
 //including both variations!!!
     if (score % 3 === 0 || score % 5 === 0) {
-        if(score % 15===0) {
-alert("ping-pong!!!");
+        if (score % 15 === 0) {
+          feedback ="ping-pong";
+        } else if (score % 3 === 0) {
+          feedback = "ping";
+        } else if (score % 5 === 0) {
+          feedback = "pong";
+        } else {
+          feedback = score;
         }
 
-    }
-    else {
-      alert("alert no");
-    }
 
 
-    alert(score);
 }
-
+console.log("input1 " +input1);
+console.log("score "+score);
+return feedback;
+}
 
 
 

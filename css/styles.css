@@ -39,9 +39,8 @@ body{
 }
 #results {
   position: fixed;
-  right: 45vw;
-  top: 90vh;
-  width: 10vw;
+  right: 40vw;
+  top: 80vh;
   font-size: 24pt;
   font-family: fantasy;
   color: red;
