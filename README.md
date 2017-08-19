@@ -14,7 +14,7 @@ _{This appplication will allow user to input a number and will evaluate that num
 * _open simple http server in top level of cloned directory
 * _open with atom or similiar tool
 * _open web Browser of choice to local host 8000
-
+*_ change scripts to scripts-2 for a more interactive game.
 _{please feel free to read https://help.github.com/articles/cloning-a-repository/ for further cloning directions }_
 
 ## Known Bugs
@@ -38,6 +38,13 @@ is divisible by "5 or 3" if yes, evaluates if divisible by "15"
 did the 5 or 3 as first part of loop to lower the amount of processing required.
 assigned output values to results of 3,5,15 divisibility;
 returns output to front end front evaluates if it should reveal pictures, and does so accordingly after reporting the "score" to the user.
+basic game
+{input = 16, output =1,2} (just score)
+{output = "ping" and a img} (when total equals 3)
+{output = "pong" and a img} (when total equals 5)
+{output = "ping-pong" and a img} (total equals 15)
+
+alternate game
 {input = 1, output =1} (initial entry)
 {input = 2, output = "ping" and a img} (total equals 3)
 {input = 2, output = "pong" and a img} (total equals 5)

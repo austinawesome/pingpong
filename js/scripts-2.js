@@ -1,6 +1,14 @@
+var firstTime = true;
 var pingPonged = function(inputFromUser) {
   var input1 = parseInt(inputFromUser);
-    for (score =1; i<=userInput; score++) {
+  if (firstTime) {
+    score = input1;
+    firstTime = false;
+    feedback = score;
+  } else {
+    score = score + input1;
+  }
+    for (i=0; i<1; i++) {
       if (score % 3 === 0 || score % 5 === 0) {
         if (score % 15 === 0) {
           feedback = "ping-pong";
