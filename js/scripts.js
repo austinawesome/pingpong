@@ -1,6 +1,7 @@
 var pingPonged = function(inputFromUser) {
   var input1 = parseInt(inputFromUser);
-    for (score =1; score<=userInput; score++) {
+
+    for (score =1; score<=input1; score++) {
       if (score % 3 === 0 || score % 5 === 0) {
         if (score % 15 === 0) {
           feedback = "ping-pong";
@@ -14,8 +15,10 @@ var pingPonged = function(inputFromUser) {
         feedback = score;
         revealIt = false;
     }
-  }
   return feedback;
+$("#result").prepend("<P>" + output + "</p>");
+ }
+
 }
 
 
